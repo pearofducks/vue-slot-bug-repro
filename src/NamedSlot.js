@@ -3,8 +3,8 @@ export default {
   render(h) {
     const children = []
     // eslint-disable-next-line
-    console.log("FOO SHOULD EXIST", this.$slots.foo)
-    if (this.$slots.foo) children.push(this.$slots.foo)
+    console.log("FOO SHOULD EXIST", this.$scopedSlots.foo)
+    if (this.$scopedSlots.foo) children.push(this.$scopedSlots.foo)
     return h('div', { staticClass: 'bar' }, children)
   }
 }
